@@ -1,4 +1,6 @@
 ---
+import { withBase } from "../utils/url";
+
 interface Props {
   activePath?: string;
   siteName: string;
@@ -21,7 +23,7 @@ function isActive(href: string): boolean {
 
 <header class="site-header">
   <div class="site-header__inner">
-    <a class="site-header__brand" href="/">
+    <a class="site-header__brand" href={withBase("/")}>
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -37,7 +39,7 @@ function isActive(href: string): boolean {
       {
         navItems.map((item) => (
           <a
-            href={item.href}
+            href={withBase(item.href)}
             aria-current={isActive(item.href) ? "page" : undefined}
           >
             {item.label}

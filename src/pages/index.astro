@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../utils/url";
 ---
 
 <BaseLayout title="Waldpfad Kalchmatt" activePath="/">
@@ -16,13 +17,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         warum es wichtig ist.
       </p>
       <div class="hero__actions">
-        <a class="button button--primary" href="/pfad/">
+        <a class="button button--primary" href={withBase("/pfad/")}>
           Pfad &amp; Stationen ansehen
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
             <path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </a>
-        <a class="button button--ghost" href="/infotafel/">Was ist das hier?</a>
+        <a class="button button--ghost" href={withBase("/infotafel/")}>Was ist das hier?</a>
       </div>
     </div>
     <svg
@@ -117,7 +118,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <p>
     Der Pfad funktioniert ohne Führung und ohne GPS. Sie brauchen nur Ihr
     Smartphone, um die QR-Codes zu scannen. Eine Übersicht aller Stationen finden
-    Sie auf der Seite <a href="/pfad/">Pfad &amp; Stationen</a>.
+    Sie auf der Seite <a href={withBase("/pfad/")}>Pfad &amp; Stationen</a>.
   </p>
 
   <p>

@@ -1,4 +1,6 @@
 ---
+import { withBase } from "../utils/url";
+
 const year = new Date().getFullYear();
 ---
 
@@ -19,9 +21,9 @@ const year = new Date().getFullYear();
       auf dem Pfad und stören Sie die Lebensräume nicht.
     </p>
     <p class="site-footer__links">
-      <a href="/pfad/">Pfad &amp; Stationen</a>
-      <a href="/infotafel/">Infotafel</a>
-      <a href="/impressum/">Impressum &amp; Datenschutz</a>
+      <a href={withBase("/pfad/")}>Pfad &amp; Stationen</a>
+      <a href={withBase("/infotafel/")}>Infotafel</a>
+      <a href={withBase("/impressum/")}>Impressum &amp; Datenschutz</a>
     </p>
     <p class="site-footer__fine">
       &copy; {year}

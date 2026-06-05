@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { withBase } from "../utils/url";
 
 // A card linking to a single station (tree or object).
 interface Props {
@@ -11,7 +12,7 @@ const { data } = station;
 ---
 
 <li class="station-card">
-  <a href={`${basePath}${data.slug}/`}>
+  <a href={withBase(`${basePath}${data.slug}/`)}>
     <span class="station-card__title">
       {data.title}
       <svg
