@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type ExternalLink = CollectionEntry<"baeume">["data"]["externalLinks"][number];
+
+interface Props {
+  links: ExternalLink[];
+}
+const { links } = Astro.props;
+---
+
+{
+  links && links.length > 0 ? (
+    <ul>
+      {links.map((link) => (
+        <li>
+          <a href={link.url} rel="noopener noreferrer" target="_blank">
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p class="placeholder">[Externer Fachlink ergänzen]</p>
+  )
+}

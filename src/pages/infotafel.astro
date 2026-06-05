@@ -1,0 +1,18 @@
+---
+import { getEntry, render } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const entry = await getEntry("seiten", "infotafel");
+if (!entry) {
+  throw new Error("Seiteninhalt 'infotafel' fehlt in src/content/seiten/");
+}
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.summary}
+  activePath="/infotafel/"
+>
+  <Content />
+</BaseLayout>

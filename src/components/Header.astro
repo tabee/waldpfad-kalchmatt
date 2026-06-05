@@ -1,0 +1,49 @@
+---
+interface Props {
+  activePath?: string;
+  siteName: string;
+}
+
+const { activePath, siteName } = Astro.props;
+
+const navItems = [
+  { href: "/", label: "Start" },
+  { href: "/pfad/", label: "Pfad & Stationen" },
+  { href: "/infotafel/", label: "Infotafel" },
+  { href: "/impressum/", label: "Impressum" },
+];
+
+function isActive(href: string): boolean {
+  if (!activePath) return false;
+  return activePath === href;
+}
+---
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="/">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 2 18 11h-3l4 6H5l4-6H6L12 2Z"
+            fill="#eaf5ec"
+          />
+          <rect x="11" y="16" width="2" height="6" fill="#c9a27a" />
+        </svg>
+      </span>
+      <span>{siteName}</span>
+    </a>
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      {
+        navItems.map((item) => (
+          <a
+            href={item.href}
+            aria-current={isActive(item.href) ? "page" : undefined}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>

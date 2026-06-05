@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Platzhalterbild: Asthaufen">
+  <rect width="800" height="450" fill="#e8efe4"/>
+  <g stroke="#7a5a2e" stroke-width="10" stroke-linecap="round">
+    <line x1="250" y1="320" x2="520" y2="260"/>
+    <line x1="270" y1="300" x2="540" y2="320"/>
+    <line x1="300" y1="340" x2="500" y2="300"/>
+    <line x1="320" y1="280" x2="480" y2="340"/>
+  </g>
+  <text x="400" y="420" font-family="system-ui, sans-serif" font-size="26" fill="#4a513e" text-anchor="middle">Platzhalter – Foto des Asthaufens folgt</text>
+</svg>

@@ -1,0 +1,26 @@
+---
+// A definition-list fact box ("Steckbrief"). Empty values are skipped.
+interface FactItem {
+  term: string;
+  value?: string | null;
+}
+interface Props {
+  caption?: string;
+  items: FactItem[];
+}
+const { caption, items } = Astro.props;
+const visibleItems = items.filter((item) => item.value && item.value.trim() !== "");
+---
+
+<section class="fact-box" aria-label={caption ?? "Steckbrief"}>
+  <dl>
+    {
+      visibleItems.map((item) => (
+        <>
+          <dt>{item.term}</dt>
+          <dd>{item.value}</dd>
+        </>
+      ))
+    }
+  </dl>
+</section>

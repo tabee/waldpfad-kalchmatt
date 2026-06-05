@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+// A card linking to a single station (tree or object).
+interface Props {
+  station: CollectionEntry<"baeume"> | CollectionEntry<"objekte">;
+  basePath: string; // "/baeume/" or "/objekte/"
+}
+const { station, basePath } = Astro.props;
+const { data } = station;
+---
+
+<li class="station-card">
+  <a href={`${basePath}${data.slug}/`}>
+    <span class="station-card__title">
+      {data.title}
+      <svg
+        class="arrow"
+        viewBox="0 0 24 24"
+        width="20"
+        height="20"
+        fill="none"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 12h14m-6-6 6 6-6 6"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </span>
+    <span class="station-card__meta">
+      {data.locationLabel ?? ""}
+      {data.draft ? <span class="badge badge--draft">Entwurf</span> : null}
+    </span>
+    <span class="station-card__summary">{data.summary}</span>
+  </a>
+</li>

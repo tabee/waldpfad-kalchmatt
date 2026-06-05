@@ -1,0 +1,129 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Waldpfad Kalchmatt" activePath="/">
+  <section class="hero full-bleed" aria-labelledby="hero-title">
+    <div class="hero__inner">
+      <p class="eyebrow">Digitaler Waldlehrpfad · Zollbrück</p>
+      <h1 id="hero-title" class="hero__title">
+        Willkommen auf dem Waldpfad Kalchmatt
+      </h1>
+      <p class="hero__lead">
+        Entdecken Sie ausgewählte Bäume und Waldstrukturen entlang eines rund
+        400&nbsp;Meter langen Weges – ganz ohne Führung, in Ihrem eigenen Tempo.
+        Scannen Sie die QR-Codes vor Ort und erfahren Sie, was Sie sehen und
+        warum es wichtig ist.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="/pfad/">
+          Pfad &amp; Stationen ansehen
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
+        <a class="button button--ghost" href="/infotafel/">Was ist das hier?</a>
+      </div>
+    </div>
+    <svg
+      class="hero__skyline"
+      viewBox="0 0 1440 120"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="currentColor"
+        opacity="0.45"
+        d="M0,46 C240,96 480,8 720,44 C960,80 1200,18 1440,54 L1440,120 L0,120 Z"
+      ></path>
+      <path
+        fill="currentColor"
+        d="M0,74 C240,116 480,44 720,78 C960,112 1200,58 1440,88 L1440,120 L0,120 Z"
+      ></path>
+    </svg>
+  </section>
+
+  <h2>Warum sieht dieser Wald nicht „aufgeräumt“ aus?</h2>
+  <p>
+    Viele Menschen denken, ein gepflegter Wald müsse ordentlich und sauber
+    aussehen. Dieser Wald wird bewusst naturnah entwickelt. Totholz, Asthaufen,
+    Steinhaufen, junge Bäume und natürliche Verjüngung sind kein Zeichen von
+    Vernachlässigung, sondern wertvoller Lebensraum.
+  </p>
+  <p>
+    Ein <strong>Mischwald</strong> mit vielen verschiedenen Baumarten ist
+    stabiler und widerstandsfähiger als eine Monokultur. Dieser Wald wird über
+    Generationen gedacht – nicht für den schnellen Gewinn, sondern für die
+    Zukunft.
+  </p>
+  <ul class="features" aria-label="Was diesen Wald ausmacht">
+    <li class="feature">
+      <span class="feature__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 3 17 11h-3l4 7H6l4-7H7l5-8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path>
+          <path d="M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <h3>Naturnah statt aufgeräumt</h3>
+      <p>
+        Totholz, Asthaufen und junge Bäume bleiben bewusst stehen. Sie sind
+        wertvoller Lebensraum, kein Zeichen von Vernachlässigung.
+      </p>
+    </li>
+    <li class="feature">
+      <span class="feature__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 21V9m0 0 3.5-4M7 9 3.5 5M17 21V7m0 0 3.5-3M17 7l-3.5-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      <h3>Mischwald ist stabil</h3>
+      <p>
+        Viele Baumarten machen den Wald widerstandsfähiger gegen Trockenheit,
+        Stürme und Schädlinge als eine Monokultur.
+      </p>
+    </li>
+    <li class="feature">
+      <span class="feature__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 21c0-4 0-7 0-7m0 0c-3 0-5-2-5-5 3 0 5 2 5 5Zm0 0c0-3 2-6 5-6 0 3-2 6-5 6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </span>
+      <h3>Für kommende Generationen</h3>
+      <p>
+        Ausgewählte Bäume werden über Jahrzehnte gefördert – mit Blick auf den
+        Wald der Zukunft und den Klimawandel.
+      </p>
+    </li>
+  </ul>
+  <h2>Kurze Besucherregeln</h2>
+  <div class="rules">
+    <ul>
+      <li>
+        Bitte bleiben Sie auf dem Pfad. So schützen Sie junge Bäume, den
+        Waldboden und ruhige Lebensräume für Tiere.
+      </li>
+      <li>
+        Lassen Sie Asthaufen, Steinhaufen und Totholz liegen. Sie sind Versteck
+        und Nahrung für viele kleine Tiere, Insekten und Pilze.
+      </li>
+      <li>
+        Nehmen Sie Ihren Abfall wieder mit und halten Sie Hunde unter Kontrolle.
+      </li>
+    </ul>
+  </div>
+
+  <h2>Selbstständig unterwegs</h2>
+  <p>
+    Der Pfad funktioniert ohne Führung und ohne GPS. Sie brauchen nur Ihr
+    Smartphone, um die QR-Codes zu scannen. Eine Übersicht aller Stationen finden
+    Sie auf der Seite <a href="/pfad/">Pfad &amp; Stationen</a>.
+  </p>
+
+  <p>
+    <em>
+      Projektname und einige Angaben sind noch vorläufig:
+      <span class="placeholder">[Forest Name Placeholder]</span>.
+    </em>
+  </p>
+</BaseLayout>

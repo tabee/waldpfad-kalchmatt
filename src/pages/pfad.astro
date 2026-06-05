@@ -1,0 +1,85 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import StationCard from "../components/StationCard.astro";
+
+// Build the overview from content collections, sorted by `order`.
+// During development we show drafts too; they are clearly marked.
+const isDev = import.meta.env.DEV;
+
+function sortByOrder<T extends { data: { order: number } }>(items: T[]): T[] {
+  return [...items].sort((a, b) => a.data.order - b.data.order);
+}
+
+const trees = sortByOrder(
+  (await getCollection("baeume")).filter((s) => isDev || !s.data.draft),
+);
+const objects = sortByOrder(
+  (await getCollection("objekte")).filter((s) => isDev || !s.data.draft),
+);
+---
+
+<BaseLayout
+  title="Pfad & Stationen"
+  description="Übersicht über den rund 400 Meter langen Waldpfad Kalchmatt mit Baum- und Objekt-Stationen."
+  activePath="/pfad/"
+>
+  <h1>Pfad &amp; Stationen</h1>
+
+  <p class="lead">
+    Der Waldpfad ist rund 400&nbsp;Meter lang und hat zwei Eingänge. Sie können
+    den Pfad von beiden Seiten begehen.
+  </p>
+
+  <h2>So funktioniert der Pfad</h2>
+  <p>
+    An beiden Eingängen steht eine Infotafel mit einer kurzen Übersicht und einem
+    QR-Code. Entlang des Weges markieren kleine Pfosten ausgewählte Bäume und
+    Waldstrukturen. Jeder QR-Code führt direkt zur passenden Station auf dieser
+    Website.
+  </p>
+  <p>
+    Sie müssen nicht jeden Pfosten in einer bestimmten Reihenfolge besuchen.
+    Folgen Sie einfach dem Weg und scannen Sie, was Sie interessiert.
+  </p>
+
+  <div class="rules">
+    <p>
+      <strong>Bitte bleiben Sie auf dem Pfad.</strong> So schützen Sie junge
+      Bäume, den Waldboden und ruhige Lebensräume für Tiere.
+    </p>
+  </div>
+
+  <h2>Bäume</h2>
+  {
+    trees.length > 0 ? (
+      <ul class="station-grid">
+        {trees.map((station) => (
+          <StationCard station={station} basePath="/baeume/" />
+        ))}
+      </ul>
+    ) : (
+      <p class="placeholder">[Tree Species Placeholder] – Stationen folgen.</p>
+    )
+  }
+
+  <h2>Objekte &amp; Waldstrukturen</h2>
+  {
+    objects.length > 0 ? (
+      <ul class="station-grid">
+        {objects.map((station) => (
+          <StationCard station={station} basePath="/objekte/" />
+        ))}
+      </ul>
+    ) : (
+      <p class="placeholder">[Object Station Placeholder] – Stationen folgen.</p>
+    )
+  }
+
+  <h2>Einfache Karte</h2>
+  <p>
+    Eine einfache schematische Karte des Pfades mit den beiden Eingängen folgt
+    hier: <span class="placeholder">[Karte / Schema ergänzen]</span>. Der Pfad
+    benötigt kein GPS – die Stationen sind vor Ort beschriftet.
+  </p>
+</BaseLayout>

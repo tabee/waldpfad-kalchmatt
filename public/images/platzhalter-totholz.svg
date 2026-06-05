@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Platzhalterbild: Totholz">
+  <rect width="800" height="450" fill="#e8efe4"/>
+  <rect x="200" y="300" width="400" height="60" rx="30" fill="#7a5a2e"/>
+  <ellipse cx="200" cy="330" rx="22" ry="30" fill="#5d4522"/>
+  <circle cx="300" cy="295" r="10" fill="#4c8a50"/>
+  <circle cx="360" cy="298" r="8" fill="#4c8a50"/>
+  <text x="400" y="420" font-family="system-ui, sans-serif" font-size="26" fill="#4a513e" text-anchor="middle">Platzhalter – Foto des Totholzes folgt</text>
+</svg>
