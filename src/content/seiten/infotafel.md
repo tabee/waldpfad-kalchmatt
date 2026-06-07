@@ -1,13 +1,13 @@
 ---
 title: "Infotafel: Waldrandaufwertung & Durchforstung"
 slug: "infotafel"
-summary: "Die Infotafel des Försters: ökologische Waldrandaufwertung zur Emme und Durchforstung im Winter 2025/2026."
+summary: "Die Infotafel des Försters: ökologische Waldrandaufwertung zur Emme und Durchforstung seit Winter 2025/2026."
 draft: false
 ---
 
 # Ökologische Waldrandaufwertung und Durchforstung
 
-Im Winter 2025/2026 wird am Waldrand zur Emme eine **ökologische Aufwertung des Waldrandes** und eine **Durchforstung** durchgeführt. Dieser Text gibt die Infotafel des Försters vor Ort wieder.
+Seit Winter 2025/2026 wird am Waldrand zur Emme eine **ökologische Aufwertung des Waldrandes** und eine **Durchforstung** durchgeführt. Dieser Text gibt die Infotafel des Försters vor Ort wieder.
 
 ## Warum eine Waldrandaufwertung?
 

@@ -30,7 +30,7 @@ Dieser Asthaufen wurde bewusst liegen gelassen. Er besteht aus Ästen und Zweige
 
 Bei einem Holzschlag und bei der Waldpflege fällt **Schlagraum** an – also Äste und Kronenteile. Statt alles wegzuräumen, werden daraus grosse Asthaufen aufgeschichtet. So entstehen Verstecke und Rückzugsorte für viele Tiere.
 
-Im Winter 2025/2026 entstehen solche Asthaufen gezielt bei der Aufwertung des Waldrandes zur Emme.
+Seit Winter 2025/2026 entstehen solche Asthaufen gezielt bei der Aufwertung des Waldrandes zur Emme.
 
 ## Warum ist das keine Unordnung?
 
