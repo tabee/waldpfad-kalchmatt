@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Platzhalterbild: Berg-Ahorn">
+  <rect width="800" height="450" fill="#e8efe4"/>
+  <circle cx="400" cy="180" r="120" fill="#3f7a44"/>
+  <rect x="385" y="290" width="30" height="110" fill="#6f5230"/>
+  <text x="400" y="430" font-family="system-ui, sans-serif" font-size="26" fill="#4a513e" text-anchor="middle">Platzhalter – Foto des Berg-Ahorns folgt</text>
+</svg>

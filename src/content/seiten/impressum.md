@@ -9,9 +9,29 @@ draft: false
 
 ## Verantwortlich
 
-<span class="placeholder">[Owner / Responsibility Placeholder]</span>
+Waldpfad Kalchmatt, privater Wald in der Gemeinde Lauperswil (Zollbrück), Kanton Bern.
 
-Waldpfad Kalchmatt, privater Wald bei 3436 Zollbrück, Kanton Bern.
+**Eigentümerin / Auftraggeberin:** Bee Architekten, Emmentalstrasse 11, 3510 Konolfingen
+
+**Waldbewirtschaftung / Förster:** Konstantin Hitz, Förster HF, Emmentaler Wald & Holz GmbH (EWH), Schreinershaus 1447, 3452 Grünenmatt – [www.ewh-gmbh.ch](https://www.ewh-gmbh.ch)
+
+Die Eigentümerin überlässt die Bewirtschaftung dem Förster. Er hat freie Hand, den Wald nachhaltig und naturnah zu bewirtschaften.
+
+## Liegenschaft
+
+Der Waldpfad liegt auf einer privaten Liegenschaft. Die folgenden Angaben stammen aus dem eidgenössischen Grundbuch:
+
+- **Gemeinde:** Lauperswil (BFS-Nr. 903)
+- **Grundstück:** Liegenschaft Nr. 145 (Lauperswil 903/145)
+- **E-GRID:** CH388646351679
+- **Lage:** Flurname Emme, Zollbrück
+- **Grundstücksfläche:** 7’528 m²
+
+Die Bodenbedeckung verteilt sich auf:
+
+- Geschlossener Wald: 7’109 m²
+- Gartenanlage: 414 m²
+- Strasse, Weg: 5 m²
 
 ## Datenschutz
 

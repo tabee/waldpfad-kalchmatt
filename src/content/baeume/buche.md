@@ -6,7 +6,7 @@ status: "planned"
 draft: true
 summary: "Die Buche ist in vielen Schweizer Wäldern verbreitet und prägt schattige, kühle Waldbereiche."
 keyMessage: "Die Buche gehört zu den häufigsten Bäumen im Mittelland. Im Mischwald bleibt sie wichtig – ergänzt durch Baumarten, die mit Trockenheit besser zurechtkommen."
-order: 2
+order: 10
 locationLabel: "Mittlerer Abschnitt des Pfades"
 qrLabel: "Buche"
 germanName: "Rotbuche"
@@ -48,7 +48,7 @@ Das dichte Kronendach der Buche sorgt für ein kühles, feuchtes Waldklima. Ihr 
 
 ## Pflege und Rolle des Försters
 
-<span class="placeholder">[Försterhinweis ergänzen]</span>
+Die Waldpflege liegt bei Förster Konstantin Hitz (Emmentaler Wald & Holz GmbH). Im Rahmen der Durchforstung werden gezielt **Zukunftsbäume** gefördert und freigestellt.
 
 ## Begriffe einfach erklärt
 

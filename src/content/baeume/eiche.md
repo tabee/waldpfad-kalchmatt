@@ -2,7 +2,7 @@
 title: "Stiel-Eiche"
 slug: "eiche"
 type: "baum"
-status: "planned"
+status: "active"
 draft: true
 summary: "Die Eiche ist ein langlebiger Baum mit hohem Wert für viele Tiere und Insekten."
 keyMessage: "Diese Eiche ist ein Generationenbaum. Sie wurde ausgewählt, weil sie auch für den Wald der Zukunft wichtig sein kann und sehr vielen Tieren Lebensraum bietet."
@@ -21,6 +21,9 @@ image:
   alt: "Platzhalterbild einer Stiel-Eiche mit Blättern und Eicheln"
   source: "Eigenes Foto (folgt)"
 externalLinks:
+  - label: "Stiel-Eiche im Schweizerischen Landesforstinventar (LFI)"
+    url: "https://www.lfi.ch/de/baumarten"
+    sourceType: "science"
   - label: "Informationen zu Bäumen und Wald (waldwissen.net)"
     url: "https://www.waldwissen.net/de"
     sourceType: "forestry"
@@ -51,11 +54,13 @@ Die tiefen Wurzeln der Eiche lockern den Boden. Ihr Laub zersetzt sich und gibt 
 
 ## Pflege und Rolle des Försters
 
-Welche Bäume gefördert werden, wird mit der Försterin oder dem Förster abgesprochen. <span class="placeholder">[Försterhinweis ergänzen]</span>
+Die Waldpflege liegt bei Förster Konstantin Hitz (Emmentaler Wald & Holz GmbH). Im Rahmen der Durchforstung werden gezielt **Zukunftsbäume** gefördert und freigestellt – Bäume, die den Wald der Zukunft prägen sollen.
 
 ## Begriffe einfach erklärt
 
 **Generationenbaum:** Ein Baum, der bewusst stehen gelassen oder gepflanzt wird, damit er über viele Jahrzehnte wachsen und nützen kann.
+
+**Zukunftsbaum:** Ein anderer Begriff für einen geförderten Baum. Der Förster markiert solche Bäume mit einem blauen Ring.
 
 **Mischwald:** Ein Wald aus vielen verschiedenen Baumarten. Er ist widerstandsfähiger als ein Wald aus nur einer Art.
 
